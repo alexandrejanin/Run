@@ -704,11 +704,6 @@ MonoBehaviour:
   player: {fileID: 442983813}
   piecePrefabs:
   - {fileID: 6484129876779199641, guid: 88dd2047d5b4100488acf7e9ca924a88, type: 3}
-  - {fileID: 6484129876779199641, guid: dd5e0d314c25a6d4d93828c2c524b01a, type: 3}
-  - {fileID: 6484129876779199641, guid: e1a306eb21f108c4a9906bef2649e65d, type: 3}
-  - {fileID: 6484129876779199641, guid: 3c2b31f43f11c4645bcb1887ae03b8ac, type: 3}
-  - {fileID: 6484129876779199641, guid: 654ae950ca85c8b4cbc03d30b7a3ab0f, type: 3}
-  - {fileID: 6484129876779199641, guid: 21ac48a56e1475c4b95c1c3ec367418d, type: 3}
   pieces:
   - {fileID: 6484129876338775717}
   - {fileID: 6484129876262730695}
@@ -883,7 +878,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 0.475
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08

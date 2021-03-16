@@ -52,16 +52,18 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\LevelGenerator.cs" />
-     <Compile Include="Assets\Scripts\LevelPiece.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\LevelGenerator.cs" />
+     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
+     <Compile Include="Assets\Scripts\PlayerScore.cs" />
+     <Compile Include="Assets\Scripts\LevelPiece.cs" />
+     <Compile Include="Assets\Scripts\SizeRandomizer.cs" />
      <Compile Include="Assets\Scripts\PlayerCamera.cs" />
      <Compile Include="Assets\Scripts\SpawnCurve.cs" />
-     <Compile Include="Assets\Scripts\SizeRandomizer.cs" />
-     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
      <Compile Include="Assets\Scripts\DefeatMenu.cs" />
-     <Compile Include="Assets\Scripts\PlayerScore.cs" />
      <Compile Include="Assets\Scripts\ColorRandomizer.cs" />
+     <Compile Include="Assets\Scripts\ObstacleRandomizer.cs" />
+     <Compile Include="Assets\Scripts\PlayerDodge.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
