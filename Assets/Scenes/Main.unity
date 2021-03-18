@@ -201,13 +201,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29505295}
-  m_LocalRotation: {x: 0.17216256, y: -0.12854324, z: 0.02266564, w: 0.97638255}
-  m_LocalPosition: {x: 1.67, y: 4.5, z: -6}
+  m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
+  m_LocalPosition: {x: 0, y: 4.5, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 20, y: -15, z: 0}
+  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
 --- !u!114 &29505299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,6 +817,7 @@ GameObject:
   - component: {fileID: 1401719944}
   - component: {fileID: 1401719945}
   - component: {fileID: 1401719947}
+  - component: {fileID: 1401719948}
   - component: {fileID: 1401719946}
   m_Layer: 0
   m_Name: Player
@@ -865,6 +866,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df15941e11d062e4f8c97de01c5bb073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 8
   defeatMenu: {fileID: 1674855432}
 --- !u!143 &1401719946
 CharacterController:
@@ -897,6 +901,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 316451656}
+--- !u!114 &1401719948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401719942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fb0be158e8661e4cbe263b462967782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 8
+  sideLength: 0.7
 --- !u!1 &1674855432
 GameObject:
   m_ObjectHideFlags: 0
