@@ -7,6 +7,7 @@ public class PlayerCollision : MonoBehaviour {
     private void OnControllerColliderHit(ControllerColliderHit hit) {
         if ((layerMask & 1 << hit.gameObject.layer) != 0) {
             GetComponent<PlayerMovement>().enabled = false;
+            GetComponent<PlayerScore>().enabled = false;
             defeatMenu.SetActive(true);
         }
     }

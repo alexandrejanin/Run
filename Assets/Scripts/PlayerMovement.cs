@@ -12,11 +12,11 @@ public class PlayerMovement : MonoBehaviour {
         camera = FindObjectOfType<Camera>();
     }
 
-    private void FixedUpdate() {
+    private void Update() {
         var leftmostPoint = camera.WorldToScreenPoint(new Vector3(-2, transform.position.y, transform.position.z)).x;
         var rightmostPoint = camera.WorldToScreenPoint(new Vector3(2, transform.position.y, transform.position.z)).x;
 
         var mousePos = Mathf.InverseLerp(leftmostPoint, rightmostPoint, Input.mousePosition.x);
-        controller.Move(new Vector3(-2 + mousePos * 4 - transform.position.x, 0, Time.fixedDeltaTime * speed));
+        controller.Move(new Vector3(-2 + mousePos * 4 - transform.position.x, 0, Time.deltaTime * speed));
     }
 }
